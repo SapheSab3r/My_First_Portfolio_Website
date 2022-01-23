@@ -1,0 +1,195 @@
+/*set both left and right margin of the webpage*/
+html{
+    margin:auto 5%;
+}
+
+/*style for the header*/
+header{
+    font-size:180%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: cornsilk;
+}
+
+h1{
+    padding-top: 5%;
+}
+
+/*adding background image for the header and the navigation*/
+#head{
+    background-image: url("https://blog.tubikstudio.com/wp-content/uploads/2019/12/whale-at-home-illustration.png"); /*give a fall back if the brower cannot support things below*/
+    background:-moz-linear-gradient( url("../images/whale-at-home-illustration.png"));
+    background:-webkit-linear-gradient( url("../images/whale-at-home-illustration.png"));
+    background:-o-linear-gradient( url("../images/whale-at-home-illustration.png"));
+}
+
+
+/*adding background image for the first section*/
+.half1{
+    background-image:url("https://blog.tubikstudio.com/wp-content/uploads/2019/12/whale-at-home-illustration.png"); 
+    background:-moz-linear-gradient( url("../images/whale-at-home-illustration.png"));
+    background:-webkit-linear-gradient( url("../images/whale-at-home-illustration.png"));
+    background:-o-linear-gradient( url("../images/whale-at-home-illustration.png"));
+    padding:2%;
+    background-position:0 4%;
+    margin-top: 4%;
+}
+
+details p{
+    font-style: italic;
+}
+
+/*adding a second background layer for section 1 and 3*/
+.p1, details, .p3{
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 2%;
+}
+
+/*adding background image for the third section*/
+.half3{
+    background-image:url("https://blog.tubikstudio.com/wp-content/uploads/2019/12/whale-at-home-illustration.png"); 
+    background:-moz-linear-gradient( url("../images/whale-at-home-illustration.png"));
+    background:-webkit-linear-gradient( url("../images/whale-at-home-illustration.png"));
+    background:-o-linear-gradient( url("../images/whale-at-home-illustration.png"));
+    padding: 2%;
+    background-position:0 58%;
+    margin-top: 4%;
+}
+
+
+/*changing the first section's font*/
+.p1{
+    word-spacing: 2px;
+    font-size: 24px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+
+}
+
+/*adding background for the second section*/
+.half2{
+    background-color:rgba(253, 162, 77, 0.7);
+    border: 10px solid rgb(180, 43, 1, 0.4);
+    padding:2%;
+    margin-top: 4%;
+}
+
+/*spacing for the first section write-up*/
+.intro{
+    margin-right: 10%;
+}
+
+/*changing the image size*/
+#klcc{
+    width: 30%;
+    margin-left: 14%;
+    margin-bottom: 2%;
+}
+
+/*adding styles for the navigation*/
+nav{
+    clear:both;
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 25px;
+    padding: 15px;
+    display: table;
+}
+
+nav a{
+    margin: 20px;
+    display: inline-block;
+    background-color:none;
+}
+nav a:hover{
+    color: #0006cc;
+}
+
+nav a:active{
+    color:red;
+}
+
+/*animation for the section title*/
+#One:hover, #Two:hover, #Three:hover, #Four:hover{
+    background-color: rgb(100, 102, 237);
+    padding: 12px;
+    font-size: 180%;
+    transition-duration: 2s;
+    border-radius: 50%;
+}
+
+/*webpage background color*/
+body{
+    background-color:rgba(255, 190, 164, 0.432);
+    margin: 5%;
+}
+
+/*margins and spacing for all sections*/
+section{
+    margin-right:2%;
+    display: block;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*styles for lists*/
+ul, li{
+    list-style-type: square;
+    padding: 2%;
+    padding-left: 8%;
+}
+
+.bar{
+    margin:2%;
+}
+
+
+/*styles for the section titles*/
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-variant: small-caps;
+    display: inline-block;
+    background-color: rgb(238, 129, 129);
+    padding:10px;
+}
+
+/*styles for the footer*/
+footer{
+    clear:both;
+}
+
+footer img{
+    width: 60px;
+}
+
+
+/*style base on screen size*/
+@media (max-width: 500px){
+    nav a{
+        margin:2%;
+    }
+
+    .p1{
+        display: block;
+    }
+    #klcc{
+        width:30%;
+    }
+
+    .calendar{
+        width:40rem;
+    }
+}
+
+@media (max-width: 700px){
+    nav a{
+        margin:2%;
+    }
+
+    .p1{
+        display: block;
+    }
+
+    .calendar{
+        width:50rem;
+    }
+}
